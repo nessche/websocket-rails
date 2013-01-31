@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
 
   s.files        = Dir["{lib,bin,spec}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.md", "CHANGELOG.md"]
   s.executables  = ['thin-socketrails']
-  s.require_paths << 'spec/support'
+  s.require_paths = ['lib', 'spec/support']
 
   s.add_dependency "rails"
   s.add_dependency "rack"
